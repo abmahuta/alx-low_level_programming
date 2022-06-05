@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * main - print possible combination of two digits
- * return - will always return 0 if SUCCESS
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
 */
 int main(void)
 {
