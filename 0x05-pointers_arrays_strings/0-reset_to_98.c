@@ -5,7 +5,7 @@
  * return void
  * @n: The variable of wich value to be reset
  */
-reset_to_98(int *n);
+void reset_to_98(int *n);
 {
 	*n = 98;
 }
