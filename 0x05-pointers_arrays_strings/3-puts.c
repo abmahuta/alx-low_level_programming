@@ -9,6 +9,6 @@ int main(void)
 {
 	char *mystr;
 	mystr = "Hello, World!";
-	_puts(str);
+	_puts(mystr);
 	return (0);
 }
