@@ -7,6 +7,14 @@
  */
 int _strlen(char *s)
 {
-	char mystr[7];
-	_strlen mystr[];
+	int length = 0;
+
+	while (*s)
+	{
+		length += 1;
+		s += 1;
+
+	}
+	return (length);
+
 }	
