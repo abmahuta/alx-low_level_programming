@@ -1,15 +1,18 @@
-#include "main.h"
 
+#include "main.h"
 /**
  * print_rev - Prints string in reverse
- *
- * @s: string type pointer
+ * 
+ * return: Void
  */
 void print_rev(char *s)
 {
-	int size = _strlen(s);
+	int i = _strlen(s) - 1;
 
-	while (size--)
-		_putchar(*(s + size));
+	while (s[i])
+	{
+		_putchar(s[i]);
+		i--;
+	}
 	_putchar('\n');
 }
