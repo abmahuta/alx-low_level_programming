@@ -7,8 +7,8 @@
  */
 int main(void)
 {
-	char *mystr;
-	mystr = "Hello, World!";
-	_puts(mystr);
+	char *str;
+	str = "Hello, World!";
+	_puts(str);
 	return (0);
 }
