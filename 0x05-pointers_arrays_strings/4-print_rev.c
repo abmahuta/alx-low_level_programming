@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * print_rev - Prints string in reverse
- * 
+ *
  * @s: pointer variable to string s
  */
 void print_rev(char *s)
