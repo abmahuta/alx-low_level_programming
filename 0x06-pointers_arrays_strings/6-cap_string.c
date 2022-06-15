@@ -1,30 +1,38 @@
 #include "main.h"
 
 /**
- * leet - Encodes a string into 1337
- * @c: String of variable pointer
+ * cap_string - Changes all lowercase characters of a string to uppercase.
+ * @str: An array of string.
  *
- * Return: String is encoded
+ * Return: A pointer to the changed string.
  */
-
-char *leet(char *c)
+char *cap_string(char *str)
 {
-	char *cp = c;
-	char key[] = {'A', 'E', 'O', 'T', 'L'};
-	int value[] = {4, 3, 0, 7, 1};
-	unsigned int i;
+	int index = 0;
 
-	while (*c)
+	while (str[index])
 	{
-		for (i = 0; i < sizeof(key) / sizeof(char); i++)
-		{
-			if (*c == key[i] || *c == key[i] + 32)
-			{
-				*c = 48 + value[i];
-			}
-		}
-		c++;
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
+
+		if (str[index - 1] == ' ' ||
+		    str[index - 1] == '\t' ||
+		    str[index - 1] == '\n' ||
+		    str[index - 1] == ',' ||
+		    str[index - 1] == ';' ||
+		    str[index - 1] == '.' ||
+		    str[index - 1] == '!' ||
+		    str[index - 1] == '?' ||
+		    str[index - 1] == '"' ||
+		    str[index - 1] == '(' ||
+		    str[index - 1] == ')' ||
+		    str[index - 1] == '{' ||
+		    str[index - 1] == '}' ||
+		    index == 0)
+			str[index] -= 32;
+
+		index++;
 	}
 
-	return (cp);
+	return (str);
 }
