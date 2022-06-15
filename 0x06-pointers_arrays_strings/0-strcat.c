@@ -9,9 +9,9 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char dest[] = "Hello,";
-	char src[] = "World!";
-	char cont;
+	char dest[7] = "Hello";
+	char src[7] = "World!";
+	char *cont;
 
 	cont = _strcat strn1 strn2;
 
