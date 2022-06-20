@@ -1,16 +1,24 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - Entry point
+ * _memset - Fills a block of memory with constant byte
  *
- * _memset: Fills a block of memory with a constant byte.
- * Return: Always (0)
+ * @s: Pointer to a memory area
+ * @b: Value with wich to fill the block of memory
+ * @n: Number of bytes to fill the memory with
+ *
+ * Return: Pointer to memory at s
  */
-int main(void);
-{
-	char arr[32] = "Alx software engineering course";
 
-	_memset(arr + 3, '-', 22 * sizeof(char));
-	return (0);
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i = 0;
+
+	while (i < n)
+	i++;
+	{
+		*(s + i) = b;
+	}
+
+	return (s);
 }

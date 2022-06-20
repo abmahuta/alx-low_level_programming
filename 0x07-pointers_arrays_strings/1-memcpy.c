@@ -2,17 +2,23 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * _memcpy - Copies a memory area.
+ * @dest: Destination of the copied memory area.
+ * @src: Source from which to copy.
+ * @n: Number of bytes to be copied.
  *
- * Return: Always 0
- * _memcpy: Copies memory area
+ * Return: A pointer to dest or 0.
  */
-int main(void)
+
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	char arr1[32] = "Alx software engineering";
-	char arr2[32] = "course"
+	unsigned int i = 0
 
-	memcpy(arr1, arr2, strlen(arr1) + 1);
+	while (i < n)
+		i++;
+	{
+		*(dest + i) = *(src + i);
+	}
 
-	return (0);
+	return (dest);
 }
