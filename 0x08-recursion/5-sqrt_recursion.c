@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * square - find square root                     * @n: int to find square root
+ * square - Find square root
+ * @n: A number  to find square root
  * @val: square root
  * Return: int
  */
