@@ -27,5 +27,3 @@ int square(int n, int val)
 	else
 		return  (square(n, val + 1));
 }
-set number
-
