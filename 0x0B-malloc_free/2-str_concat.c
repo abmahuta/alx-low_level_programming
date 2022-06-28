@@ -3,37 +3,42 @@
 
 /**
  * str_concat - Concatenates two strings
- * @str1: First string
- * @str2: Second string
+ * @s1: First string
+ * @s2: Second string
  *
  * Return: Pointer of an array of string
  */
-char *str_concat(char str1, char str2)
+
+char *str_concat(char *s1, char *s2)
 {
 	char *strout;
-	unsigned int i, j, k, trgt;
+	unsigned int i, j, k, limit;
 
-	if (str1 == NULL)
-		str1 = ""
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	if (str2 == NULL)
-		str2 = "";
+	for (i = 0; s1[i] != '\0'; i++)
+		;
 
-	for (i = 0; str1[i] != '\0'; i++)
+	for (j = 0; s2[j] != '\0'; j++)
+		;
 
-	for (j = 0; str2[j] != '\0'; j++)
-		if (strout == NULL)
-		{
+	strout = malloc(sizeof(char) * (i + j + 1));
+
+	if (strout == NULL)
+	{
 		free(strout);
 		return (NULL);
-		}
+	}
+
 	for (k = 0; k < i; k++)
-	strout[k] = str1[k];
+		strout[k] = s1[k];
 
-	trgt = j;
-	for (j = 0; j <= trgt; k++, j++)
-		strout[k] = str2[j];
+	limit = j;
+	for (j = 0; j <= limit; k++, j++)
+		strout[k] = s2[j];
 
-	return6 (strout);
+	return (strout);
 }
-
