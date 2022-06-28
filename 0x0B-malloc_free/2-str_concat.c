@@ -34,6 +34,6 @@ char *str_concat(char str1, char str2)
 	for (j = 0; j <= trgt; k++, j++)
 		strout[k] = str2[j];
 
-	return (strout);
+	return6 (strout);
 }
 
